@@ -1,0 +1,27 @@
+entity Character {
+	name String,
+	level Integer,
+}
+
+entity Race {
+    raceName String,
+    racePassive String
+}
+
+entity Class {
+    className String,
+}
+
+entity Skills {
+    skillName String,
+    skillDescription String
+}
+
+relationship OneToOne {
+	Character{race} to Race, 
+	Character{class} to Class, 
+}
+
+relationship ManyToMany {
+	Class{skills} to Skills, 
+}
