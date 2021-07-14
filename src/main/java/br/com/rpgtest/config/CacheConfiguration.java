@@ -48,6 +48,18 @@ public class CacheConfiguration {
             createCache(cm, br.com.rpgtest.domain.User.class.getName());
             createCache(cm, br.com.rpgtest.domain.Authority.class.getName());
             createCache(cm, br.com.rpgtest.domain.User.class.getName() + ".authorities");
+            createCache(cm, br.com.rpgtest.domain.Region.class.getName());
+            createCache(cm, br.com.rpgtest.domain.Country.class.getName());
+            createCache(cm, br.com.rpgtest.domain.Location.class.getName());
+            createCache(cm, br.com.rpgtest.domain.Department.class.getName());
+            createCache(cm, br.com.rpgtest.domain.Department.class.getName() + ".employees");
+            createCache(cm, br.com.rpgtest.domain.Task.class.getName());
+            createCache(cm, br.com.rpgtest.domain.Task.class.getName() + ".jobs");
+            createCache(cm, br.com.rpgtest.domain.Employee.class.getName());
+            createCache(cm, br.com.rpgtest.domain.Employee.class.getName() + ".jobs");
+            createCache(cm, br.com.rpgtest.domain.Job.class.getName());
+            createCache(cm, br.com.rpgtest.domain.Job.class.getName() + ".tasks");
+            createCache(cm, br.com.rpgtest.domain.JobHistory.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
